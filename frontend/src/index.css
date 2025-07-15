@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Montserrat:wght@400;600&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', 'Orbitron', Arial, sans-serif;
+  background: linear-gradient(135deg, #232526 0%, #414345 100%);
+  min-height: 100vh;
+  color: #f3f3f3;
+}
+
+header {
+  background: linear-gradient(90deg, #0f2027, #2c5364);
+  padding: 2rem 0 1rem 0;
+  text-align: center;
+  box-shadow: 0 4px 24px 0 rgba(0,0,0,0.2);
+}
+
+header h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  color: #00ffe7;
+  margin: 0;
+  text-shadow: 0 0 8px #00ffe7, 0 0 24px #0ff;
+}
+
+button, input, select {
+  font-family: inherit;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  padding: 0.7em 1.2em;
+  margin: 0.3em;
+  font-size: 1rem;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+button {
+  background: linear-gradient(90deg, #00ffe7 0%, #007cf0 100%);
+  color: #232526;
+  font-weight: 600;
+  box-shadow: 0 2px 8px 0 rgba(0,255,231,0.2);
+  cursor: pointer;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #007cf0 0%, #00ffe7 100%);
+  color: #fff;
+  box-shadow: 0 4px 16px 0 rgba(0,255,231,0.4);
+}
+
+form {
+  background: rgba(44, 83, 100, 0.7);
+  padding: 2em;
+  border-radius: 16px;
+  box-shadow: 0 4px 32px 0 rgba(0,255,231,0.1);
+  max-width: 400px;
+  margin: 2em auto;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+input, select {
+  background: #232526;
+  color: #f3f3f3;
+  border: 1px solid #00ffe7;
+  margin-bottom: 1em;
+}
+
+input:focus, select:focus {
+  border-color: #007cf0;
+  background: #2c5364;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 2em auto;
+  max-width: 600px;
+}
+
+li {
+  background: linear-gradient(90deg, #232526 60%, #00ffe7 100%);
+  margin-bottom: 1em;
+  padding: 1.2em 1em;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px 0 rgba(0,255,231,0.08);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: transform 0.1s, box-shadow 0.1s;
+}
+
+li:hover {
+  transform: translateY(-2px) scale(1.01);
+  box-shadow: 0 6px 32px 0 rgba(0,255,231,0.18);
+}
+
+li span {
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
+li[style*='line-through'] {
+  opacity: 0.6;
+  text-decoration: line-through;
+}
+
+a {
+  color: #00ffe7;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #007cf0;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: #232526;
+}
+::-webkit-scrollbar-thumb {
+  background: #00ffe7;
+  border-radius: 8px;
+}
